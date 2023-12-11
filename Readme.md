@@ -17,7 +17,7 @@ On Christmas day, your recipient can use the web app to decrypt the message, unv
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Himmelsw4nderer/CesarChristmas.git
+   git clone https://github.com/Himmelsw4nderer/christmas-cipher-gift.git
    cd christmas-cipher-gift
    ```
 
