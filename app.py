@@ -91,7 +91,7 @@ def generate_url(text, key):
     encrypted_text = caesar_encrypt(text, key)
     url_encoded_text = urllib.parse.quote(encrypted_text)
     ip_address = os.environ.get("IP", "127.0.0.1")
-    url = f"http://{ip_address}:5000/encrypt?q={url_encoded_text}"
+    url = f"http://{ip_address}:5000/?q={url_encoded_text}"
     return url
 
 
