@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>Weihnachts Entschlüsselung</h1>
+    <form method="get">
+        <label for="key">Schlüssel</label>
+        <input type="text" id="key" name="key" maxlength="3" value="{{ key }}" required>
+        <br>
+        <label for="encrypted_text">Verschlüsselter Text</label>
+        <input type="text" id="encrypted_text" name="q" value="{{ encrypted_text }}" required>
+        <br>
+        <input type="submit" value="Entschlüsseln">
+    </form>
+    {% if decrypted_text %}
+        <h2>Entschlüsselter Text</h2>
+        <p>{{ decrypted_text }}</p>
+    {% endif %}
+{% endblock %}

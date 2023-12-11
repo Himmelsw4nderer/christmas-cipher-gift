@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>Weihnachts Verschlüsselung</h1>
+    <form method="get">
+        <label for="key">Schlüssel</label>
+        <input type="text" id="key" name="key"  maxlength="3" value="{{ key }}" required>
+        <br>
+        <label for="plaintext">Klartext</label>
+        <input type="text" id="plaintext" name="q" value="{{ plain_text }}" required>
+        <br>
+        <input type="submit" value="Verschlüsseln">
+    </form>
+    {% if encrypted_text %}
+        <h2>Link</h2>
+        <p>{{ link_text }}</p>
+    {% endif %}
+    {% if qr_code %}
+        <img src="{{ url_for('static', filename='qr_code.png') }}" alt="QR Code">
+    {% endif %}
+{% endblock %}

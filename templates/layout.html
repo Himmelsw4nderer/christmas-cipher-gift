@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher Decryption</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('../images/christmas.jpg') center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(20, 20, 20, 0.9); /* White with slight transparency */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 1);; /* Default text color white */
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #EFC710; /* Gold color for h1 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding a subtle shadow for better contrast */
+        }
+
+        input[type="text"],
+        input[type="submit"] {
+            margin: 10px;
+            padding: 12px; /* Increased padding for better aesthetics */
+            font-size: 20px;
+            text-align: center;
+            border: 2px solid rgba(3, 3, 3, 0); /* Gold border color */
+            border-radius: 8px; /* Rounded corners for better aesthetics */
+            color: #333; /* Dark gray text color */
+            display: block;
+            width: 90%;
+        }
+
+        input[type="submit"] {
+            background-color: rgba(150, 3, 3, 1); /* Christmas Blue */
+            color: #fff;
+            cursor: pointer;
+            width: 95%;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: #EFC710; /* Gold color for h2 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding a subtle shadow for better contrast */
+        }
+
+        p, label {
+            font-size: 20px;
+        }
+
+        img{
+            margin: 10px;
+            padding: 12px; /* Increased padding for better aesthetics */
+            font-size: 20px;
+            text-align: center;
+            border: 2px solid rgba(3, 3, 3, 0); /* Gold border color */
+            border-radius: 100px; /* Rounded corners for better aesthetics */
+            color: #333; /* Dark gray text color */
+            display: block;
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
